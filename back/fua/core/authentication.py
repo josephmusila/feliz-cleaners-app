@@ -1,13 +1,19 @@
 from django.conf import settings
 from rest_framework import authentication,exceptions
 import jwt
+from rest_framework.authtoken.models import Token
 
 from . import models
 
 class CustomUserAuthentication(authentication.BaseAuthentication):
 
     def authenticate(self, request):
-        token = request.COOKIES.get("jwt")
+
+        
+        token = request.headers.get("Authorization")
+
+        print(token)
+        print("hello")
 
         if not token:
             return None

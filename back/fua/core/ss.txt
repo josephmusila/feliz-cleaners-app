@@ -8,12 +8,13 @@
 
 }
 
+
 {
-
-
-"email":"john@gmail.com",
-
+    "email":"john@gmail.com",
 "password":"Musula@01"
+}
 
-
+{
+"email":"jane@gmail.com",
+"password":"Musila01"
 }
